@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'keysignin'
+            keyAlias 'keyrelease'
             keyPassword 'nollimakali'
-            storeFile file('/home/mhandharbeni/Documents/AndroidProject/Sejarah/keystore.jks')
+            storeFile file('/home/mhandharbeni/Documents/AndroidProject/SELF/Sejarah/keystore.jks')
             storePassword 'nollimakali'
         }
     }
@@ -23,6 +23,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }

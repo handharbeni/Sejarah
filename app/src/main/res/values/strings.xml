@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Sejarah</string>
+    <string name="app_name">Hi-Story</string>
+    <string name="about">about</string>
 </resources>

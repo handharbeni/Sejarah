@@ -64,7 +64,7 @@ public class DetailActivity extends AppCompatActivity implements ClickListener {
         if (bundle!=null)
             idKategori = bundle.getString("idKategori");
 
-        getSupportActionBar().setTitle("Sejarah "+idKategori);
+        getSupportActionBar().setTitle(getString(R.string.app_name)+" "+idKategori);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
